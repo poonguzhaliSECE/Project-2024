@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #65d4e6;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.menu-day {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #65d4e6;
+    padding-bottom: 1rem;
+}
+
+.menu-day h2 {
+    color: #65d4e6;
+}
+
+.meal {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.meal h3 {
+    margin-top: 0;
+    color: #65d4e6;
+}
+.hidden {
+    display: none;
+}

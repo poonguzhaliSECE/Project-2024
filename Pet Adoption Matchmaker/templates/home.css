@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the entire page */
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    animation: slideIn 1s ease-in-out; /* Animation to slide in the container */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    color: #333; /* Color for the heading */
+  }
+  
+  .button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center;
+  }
+  
+  .cloud-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #6dc6e5; /* Button background color */
+    color: white;
+    border-radius: 50px; /* Rounded shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: background-color 0.3s ease; /* Smooth transition for button color */
+  }
+  
+  .cloud-button:hover {
+    background-color: #58a8cf; /* Button background color on hover */
+  }
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Food Satisfaction Poll</title>
+    <link rel="stylesheet" href="pool1.css">
+</head>
+<body>
+    <div class="poll-container">
+        <h2>How satisfied are you with today's food?</h2>
+        <form id="pollForm">
+            <label for="day">Select Day:</label>
+            <select id="day" name="day" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="satisfaction" value="Very Satisfied" required>
+                    Very Satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="Satisfied" required>
+                    Satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="Neutral" required>
+                    Neutral
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="Dissatisfied" required>
+                    Dissatisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="Very Dissatisfied" required>
+                    Very Dissatisfied
+                </label>
+            </div>
+            <label for="feedback">Additional Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+        <div id="summary">
+            <h3>Summary of Responses:</h3>
+            <ul id="summaryList"></ul>
+        </div>
+    </div>
+    <script src="pool1.js"></script>
+</body>
+</html>

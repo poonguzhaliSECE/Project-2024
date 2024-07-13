@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Auto Booking</title>
+<link rel="stylesheet" href="auto.css">
+</head>
+<body>
+
+<header>
+    <h1>Auto Booking</h1>
+</header>
+
+<main>
+    <div class="container">
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" id="pickupLocation" name="pickupLocation" required>
+
+            <label for="dropLocation">Drop Location:</label>
+            <input type="text" id="dropLocation" name="dropLocation" required>
+
+            <button type="submit">Book Auto</button>
+        </form>
+
+        <div id="confirmationMessage" style="display: none;">
+            <img src="cloud.png" alt="Cloud Icon" class="cloud-icon">
+            <p>Booking Confirmed!</p>
+        </div>
+    </div>
+</main>
+
+<script src="auto.js"></script>
+</body>
+</html>

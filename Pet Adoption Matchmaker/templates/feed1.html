@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Feedback Form</title>
+    <link rel="stylesheet" href="feed1.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Hostel Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="room">Room Number:</label>
+            <input type="text" id="room" name="room" required>
+
+            <label for="cleanliness">Room Cleanliness:</label>
+            <div class="rating" id="cleanliness">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <label for="food">Food Quality:</label>
+            <div class="rating" id="food">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <label for="staff">Staff Behavior:</label>
+            <div class="rating" id="staff">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <label for="additionalFeedback">Additional Feedback:</label>
+            <textarea id="additionalFeedback" name="additionalFeedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="feed1.js"></script>
+</body>
+</html>
